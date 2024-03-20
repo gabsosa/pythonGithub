@@ -8,3 +8,4 @@ server.listen(10)
 while True:
     client, clientConnetion = server.accept()
 
+    client.sendFile()

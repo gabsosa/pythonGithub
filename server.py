@@ -1,11 +1,14 @@
-import socket
+import time
 
-port = 5000
-server = socket.socket()
-
-server.listen(10)
+i = 0
 
 while True:
-    client, clientConnetion = server.accept()
 
-    client.sendFile()
+    print("Hello")
+
+    time.sleep(1)
+
+    i += 1
+
+    if i == 5:
+        break
